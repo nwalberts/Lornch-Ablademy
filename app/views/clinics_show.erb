@@ -1,0 +1,20 @@
+<h1><%= @clinic.name %></h1>
+<h2><%= @clinic.name %></h2>
+<h3><%= @clinic.description %></h3>
+<h3>Reviews:</h3>
+<ul>
+  <% @reviews.each do |review| %>
+    <li>
+      <%= review.username %> says <%= review.body %>
+    </li>
+  <% end %>
+</ul>
+
+<h3>Students:</h3>
+<ul>
+  <% @students.each do |student| %>
+    <li>
+      <%= student.name %>
+    </li>
+  <% end %>
+</ul>

@@ -1,0 +1,10 @@
+<h1><%= @student.name %></h1>
+
+<h3>Clinics this student has attended:</h3>
+<ul>
+  <% @clinics.each do |clinic| %>
+    <li>
+      <a href="/clinics/<%= clinic.id %>"</a> <%= clinic.name %>
+    </li>
+  <% end %>
+</ul>
