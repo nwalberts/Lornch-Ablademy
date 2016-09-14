@@ -18,8 +18,8 @@ feature "User views a clinics show page" do
     clinic_1 = Clinic.create(name: "Advanced Metaphysical Un-Object Programming", description: "Ugghh wut?", speaker: "Steven Universe")
     clinic_2 = Clinic.create(name: "Big-U Notation", description: "Big O notation but with the letter U", speaker: "Craig Barstow")
 
-    review_1 = Comment.create(clinic: clinic_1, asker: "Connie", body: "But how does one...program exactly?")
-    review_2 = Comment.create(clinic: clinic_2, asker: "Ben", body: "You spelled comment wrong")
+    comment_1 = Comment.create(clinic: clinic_1, asker: "Connie", body: "But how does one...program exactly?")
+    comment_2 = Comment.create(clinic: clinic_2, asker: "Ben", body: "You spelled comment wrong")
 
     student = Student.create(name: "That one guy")
     signup = Presentation.create(student: student, clinic: clinic_1)
