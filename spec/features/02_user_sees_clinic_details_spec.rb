@@ -30,12 +30,12 @@ feature "User views a clinics show page" do
     expect(page).to have_content clinic_1.name
     expect(page).to have_content clinic_1.description
     expect(page).to have_content student.name
-    expect(page).to have_content comment_1.username
+    expect(page).to have_content comment_1.asker
     expect(page).to have_content comment_1.body
 
     expect(page).to_not have_content clinic_2.name
     expect(page).to_not have_content clinic_2.description
-    expect(page).to_not have_content comment_2.username
+    expect(page).to_not have_content comment_2.asker
     expect(page).to_not have_content comment_2.body
   end
 end
