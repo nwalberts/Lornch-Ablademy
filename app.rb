@@ -14,25 +14,25 @@ configure do
 end
 
 get '/' do
-  redirect '/bars'
+  redirect '/clinics'
 end
 
-get '/bars' do
+get '/clinics' do
 
-  erb :'bars_index'
+  erb :'clinics_index'
 end
 
-get '/bars/:id' do
+get '/clinics/:id' do
 
-  erb :'bars_show'
+  erb :'clinics_show'
 end
 
-get '/pubcrawls' do
+get '/students' do
 
-  erb :'pubcrawls_index'
+  erb :'students_index'
 end
 
-get '/pubcrawls/:id' do
+get '/students/:id' do
 
-  erb :'pubcrawls_show'
+  erb :'students_show'
 end
