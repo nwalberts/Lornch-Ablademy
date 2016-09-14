@@ -12,8 +12,8 @@ require 'spec_helper'
 feature "User views a student show page" do
   let!(:student) { Student.create(name: "Mikolas Bowelberts") }
   let!(:clinic_1) { Clinic.create(name: "Shmuginamugana", description: "Essential mugnas", speaker: "Professor Phooey") }
-  let!(:clinic_2) { Clinic.create(name: "Advanced Metaphysical Un-Object Programming", description: "Ugghh wut?", speaker: "Steven Universe")
-  let!(:clinic_3) Clinic.create(name: "Big-U Notation", description: "Big O notation but with the letter U", speaker: "Craig Barstow")
+  let!(:clinic_2) { Clinic.create(name: "Advanced Metaphysical Un-Object Programming", description: "Ugghh wut?", speaker: "Steven Universe") }
+  let!(:clinic_3) { Clinic.create(name: "Big-U Notation", description: "Big O notation but with the letter U", speaker: "Craig Barstow") }
   let!(:signup_1) { Signup.create(student: student, clinic: clinic_1) }
   let!(:signup_2) { Signup.create(student: student, clinic: clinic_2) }
 

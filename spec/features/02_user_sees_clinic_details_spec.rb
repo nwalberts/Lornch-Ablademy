@@ -22,7 +22,7 @@ feature "User views a clinics show page" do
     comment_2 = Comment.create(clinic: clinic_2, asker: "Ben", body: "You spelled comment wrong")
 
     student = Student.create(name: "That one guy")
-    signup = Presentation.create(student: student, clinic: clinic_1)
+    signup = Signup.create(student: student, clinic: clinic_1)
 
     visit '/clinics'
     click_on clinic_1.name
