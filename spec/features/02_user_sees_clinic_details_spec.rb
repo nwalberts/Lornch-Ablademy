@@ -25,7 +25,7 @@ feature "User views a clinics show page" do
     signup = Signup.create(student: student, clinic: clinic_1)
 
     visit '/clinics'
-    click_on clinic_1.name
+    click_on clinic_1.title
 
     expect(page).to have_content clinic_1.title
     expect(page).to have_content clinic_1.description

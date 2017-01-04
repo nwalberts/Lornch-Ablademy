@@ -17,9 +17,9 @@ feature "User views a student show page" do
   let!(:signup_1) { Signup.create(student: student, clinic: clinic_1) }
   let!(:signup_2) { Signup.create(student: student, clinic: clinic_2) }
 
-  scenario "user sees a clinics title, description, speaker, and comments" do
+  scenario "user sees a list of clinics the student is attending" do
     visit '/students'
-    click_on student.title
+    click_on student.name
 
     expect(page).to have_content clinic_1.title
     expect(page).to have_content clinic_2.title
