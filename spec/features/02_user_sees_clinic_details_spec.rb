@@ -14,9 +14,9 @@ require 'spec_helper'
 
 feature "User views a clinics show page" do
 
-  scenario "user sees a clinics name, speaker, description, and comments" do
-    clinic_1 = Clinic.create(name: "Advanced Metaphysical Un-Object Programming", description: "Ugghh wut?", speaker: "Steven Universe")
-    clinic_2 = Clinic.create(name: "Big-U Notation", description: "Big O notation but with the letter U", speaker: "Craig Barstow")
+  scenario "user sees a clinics title, speaker, description, and comments" do
+    clinic_1 = Clinic.create(title: "Advanced Metaphysical Un-Object Programming", description: "Ugghh wut?", speaker: "Steven Universe")
+    clinic_2 = Clinic.create(title: "Big-U Notation", description: "Big O notation but with the letter U", speaker: "Craig Barstow")
 
     comment_1 = Comment.create(clinic: clinic_1, asker: "Connie", body: "But how does one...program exactly?")
     comment_2 = Comment.create(clinic: clinic_2, asker: "Ben", body: "You spelled comment wrong")

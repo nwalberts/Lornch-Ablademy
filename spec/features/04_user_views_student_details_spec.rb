@@ -10,19 +10,19 @@ require 'spec_helper'
 #   [ ] the clinics are links to the clinic show page
 
 feature "User views a student show page" do
-  let!(:student) { Student.create(name: "Mikolas Bowelberts") }
-  let!(:clinic_1) { Clinic.create(name: "Shmuginamugana", description: "Essential mugnas", speaker: "Professor Phooey") }
-  let!(:clinic_2) { Clinic.create(name: "Advanced Metaphysical Un-Object Programming", description: "Ugghh wut?", speaker: "Steven Universe") }
-  let!(:clinic_3) { Clinic.create(name: "Big-U Notation", description: "Big O notation but with the letter U", speaker: "Craig Barstow") }
+  let!(:student) { Student.create(title: "Mikolas Bowelberts") }
+  let!(:clinic_1) { Clinic.create(title: "Shmuginamugana", description: "Essential mugnas", speaker: "Professor Phooey") }
+  let!(:clinic_2) { Clinic.create(title: "Advanced Metaphysical Un-Object Programming", description: "Ugghh wut?", speaker: "Steven Universe") }
+  let!(:clinic_3) { Clinic.create(title: "Big-U Notation", description: "Big O notation but with the letter U", speaker: "Craig Barstow") }
   let!(:signup_1) { Signup.create(student: student, clinic: clinic_1) }
   let!(:signup_2) { Signup.create(student: student, clinic: clinic_2) }
 
-  scenario "user sees a clinics name, description, speaker, and comments" do
+  scenario "user sees a clinics title, description, speaker, and comments" do
     visit '/students'
-    click_on student.name
+    click_on student.title
 
-    expect(page).to have_content clinic_1.name
-    expect(page).to have_content clinic_2.name
-    expect(page).to_not have_content clinic_3.name
+    expect(page).to have_content clinic_1.title
+    expect(page).to have_content clinic_2.title
+    expect(page).to_not have_content clinic_3.title
   end
 end
