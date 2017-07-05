@@ -10,7 +10,7 @@ require 'spec_helper'
 #   [ ] the clinics are links to the clinic show page
 
 feature "User views a student show page" do
-  let!(:student) { Student.create(title: "Mikolas Bowelberts") }
+  let!(:student) { Student.create(name: "Mikolas Bowelberts") }
   let!(:clinic_1) { Clinic.create(title: "Shmuginamugana", description: "Essential mugnas", speaker: "Professor Phooey") }
   let!(:clinic_2) { Clinic.create(title: "Advanced Metaphysical Un-Object Programming", description: "Ugghh wut?", speaker: "Steven Universe") }
   let!(:clinic_3) { Clinic.create(title: "Big-U Notation", description: "Big O notation but with the letter U", speaker: "Craig Barstow") }
