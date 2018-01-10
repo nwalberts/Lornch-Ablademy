@@ -1,5 +1,7 @@
 # Welcome to Laurnch Ablademy!
 
+Note: `Before running your tests and after running migrations, be sure to run rake db:test:prepare`
+
 ## Part 1
   * For Part 1 we are going to focus on building our schema!
 
