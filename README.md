@@ -7,25 +7,25 @@ Note: `Before running your tests and after running migrations, be sure to run ra
 
   Create the migrations to build a schema, and models to represent the following data and object relationships:
 
-    ```
-    #### Students
+```
+#### Students
 
-    * A student must have name
-    * A student can attend many clinics
+* A student must have name
+* A student can attend many clinics
 
-    #### Clinics
+#### Clinics
 
-    * Must have a title
-    * Must have a speaker
-    * Can optionally have a description
-    * Can have many comments
-    * Can have many students
+* Must have a title
+* Must have a speaker
+* Can optionally have a description
+* Can have many comments
+* Can have many students
 
-    #### Comments
+#### Comments
 
-    * Must have an asker
-    * Must have a body
-    * Belongs to a single clinics
+* Must have an asker
+* Must have a body
+* Belongs to a single clinics
 ```
 
 ## Part 2
