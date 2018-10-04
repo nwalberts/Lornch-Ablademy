@@ -25,7 +25,7 @@ Note: `Before running your tests and after running migrations, be sure to run ra
 
 * Must have an asker
 * Must have a body
-* Belongs to a single clinics
+* Belongs to a single clinic
 ```
 
 ## Part 2
