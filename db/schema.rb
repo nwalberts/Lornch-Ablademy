@@ -10,36 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170705195314) do
+ActiveRecord::Schema.define(version: 0) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "clinics", force: :cascade do |t|
-    t.string "speaker", null: false
-    t.string "title", null: false
-    t.string "description"
-  end
-
-  create_table "comments", force: :cascade do |t|
-    t.string "asker", null: false
-    t.string "body", null: false
-    t.bigint "clinic_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["clinic_id"], name: "index_comments_on_clinic_id"
-  end
-
-  create_table "signups", force: :cascade do |t|
-    t.integer "clinic_id", null: false
-    t.bigint "student_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["student_id"], name: "index_signups_on_student_id"
-  end
-
-  create_table "students", force: :cascade do |t|
-    t.string "name", null: false
-  end
 
 end
