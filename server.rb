@@ -1,5 +1,12 @@
 require 'sinatra'
 require 'sinatra/activerecord'
+require "sinatra/reloader" if development?
+require 'sinatra/flash'
+
+require "pry" if development? || test?
+
+
+require_relative 'config/application'
 
 configure :development, :test do
   require 'pry'
