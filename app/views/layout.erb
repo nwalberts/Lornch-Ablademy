@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="/stylesheets/app.css" />
   </head>
   <body>
+
+    <% if flash.any? %>
+      <% flash.keys.each do |key, msg| %>
+      <li>
+        <%= msg %>
+      </li>
+      <% end %>
+    <% end %>
     <%= yield %>
 
     <script src="/javascripts/app.js"></script>
