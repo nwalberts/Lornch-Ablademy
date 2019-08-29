@@ -26,6 +26,7 @@ end
 
 get '/clinics' do
 
+  erb :'clinics/index'
 end
 
 get '/clinics/:id' do
@@ -34,8 +35,11 @@ end
 
 get '/students' do
 
+  erb :'students/index'
 end
 
 get '/students/:id' do
 
+
+  erb :'students/show'
 end
