@@ -30,8 +30,6 @@ Note: `Before running your tests and after running migrations, be sure to run ra
 
 In this case, the asker is just a string value with someone's name, and does not refer to the Student class.
 
-# None-Core
-
 ## Part 2
   * For Part 2 we will run our specs one at a time and get our code to pass!  Our erb templates and our routes have been pre-built... but how do we query for our necessary data???
   * utilize pry in testing environment and in development (via `pry -r ./app.rb`) to poke around and look at our methods, associations, validation
