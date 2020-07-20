@@ -24,6 +24,10 @@ get '/' do
   redirect '/clinics'
 end
 
+get '/test ' do
+  "hello from test"
+end
+
 get '/clinics' do
 
   erb :'clinics/index'
